@@ -103,6 +103,7 @@ body {
     background: #2196F3;
     color: #fff;
 }
+
 .nav-button:hover {
     background: #2196F3;
     color: #fff;
@@ -117,7 +118,6 @@ body {
     display: flex;
     gap: 32px;
     flex-wrap: wrap;
-
 }
 
 .portfolio-card {
@@ -125,13 +125,52 @@ body {
     border: 1px solid #EEEEEE;
 }
 
+.portfolio-card:hover .portfolio-card-abs {
+    display: block;
+}
+
+.portfolio-card:hover {
+    box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-card-img {
+    position: relative;
+}
+
+.portfolio-card-img img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-card-abs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(33, 150, 243, 0.9);
+    padding: 65px 23px;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    display: none;
+
+}
+
+
+.portfolio-card-details {
+    padding: 22px 23px 18px;
+}
+
 .portfolio-card h3 {
     font-size: 18px;
     font-weight: 700;
     line-height: 36px;
-    letter-spacing: 0.5px;
     text-align: left;
-    padding: 20px 20px 4px;
+    margin: 0 0 4px;
 }
 
 .portfolio-card p {
@@ -141,8 +180,8 @@ body {
     letter-spacing: 0.03em;
     text-align: left;
     color: #757575;
-    padding: 0 20px 18px;
 }
+
 /* Footer */
 
 .footer {
@@ -175,6 +214,7 @@ body {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
+
 .footer-address a:hover {
     color: #2196F3;
 }
