@@ -1,0 +1,86 @@
+.container {
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.main-box div {
+    outline: 2px solid red;
+    vertical-align: top;
+}
+
+.first-box {
+    background: #00FFFF;
+    font-size: 0;
+    overflow: hidden;
+    display: flex;
+
+}
+
+.first-box>div {
+    width: 400px;
+    height: 400px;
+    font-size: 20px;
+}
+
+.second-box {
+    font-size: 0;
+    background: #ADFF2F;
+    overflow: hidden;
+    display: flex;
+}
+
+.second-box>div {
+    
+    width: 800px;
+}
+
+.second-box>div+div {
+    
+    width: 400px;
+}
+
+.second-box-first>div {
+    height: 200px;
+}
+
+.second-box-second>div {
+    height: 133.33333px;
+}
+
+.third-box {
+    font-size: 0;
+    background: #FF8C00;
+    overflow: hidden;
+    display: flex;
+}
+
+.third-box>div {
+    
+    width: 400px;
+    height: 400px;
+}
+
+.third-box>div+div {
+    
+    width: 800px;
+}
+
+.third-box-two>div {
+    height: 200px;
+}
+
+.third-box-two-bottom>div {
+    
+    width: 400px;
+    height: 200px;
+}
+
+.third-box-two-bottom>div>div {
+    width: 400px;
+    height: 100px;
+}
+
+.third-box-two-bottom{
+    display: flex;
+}
